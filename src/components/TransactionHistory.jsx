@@ -51,7 +51,7 @@ const TransactionHistory = () => {
   return (
 		<div className='transaction-history-section'>
 			<h3 className='section-title'>Transaction History</h3>
-			<table class='table'>
+			<table className='table'>
 				<thead>
 					<tr>
 						<th>Reciever</th>
@@ -61,17 +61,17 @@ const TransactionHistory = () => {
 					</tr>
 				</thead>
 				<tbody>
-          {tableData.map(({id, Icon, text, type, date, amount}) => (
-            <tr key={id} className='row'>
-              <td>
-                <Icon />
-                {text}
-              </td>
-              <td>{type}</td>
-              <td>{date}</td>
-              <td>{amount}</td>
-            </tr>
-          ))}
+					{tableData.map(({ id, Icon, text, type, date, amount }) => (
+						<tr key={id} className='row'>
+							<td>
+								<Icon />
+								{text}
+							</td>
+							<td>{type}</td>
+							<td>{date}</td>
+							<td>{amount}</td>
+						</tr>
+					))}
 				</tbody>
 			</table>
 		</div>
