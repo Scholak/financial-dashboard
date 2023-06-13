@@ -1,0 +1,111 @@
+// Main Layout Responsive Styles Start
+@media screen and (max-width: 1600px) {
+  main {
+    padding-right: 20px;
+  }
+  
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    padding: 10px;
+  }
+}
+// Main Layout Responsive Styles End
+
+// Sidebar Responsive Styles Start
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    position: fixed;
+    transform: translateX(-100%);
+    transition: all .3s;
+    
+    &.active {
+      transform: translateX(0%);
+    }
+  }
+  
+  .toggle {
+    z-index: 1;
+    opacity: 1;
+    user-select: all;
+  }
+}
+// Sidebar Responsive Styles End
+
+// Header Responsive Styles Start
+@media screen and (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    
+    .right {
+      flex-direction: row-reverse;
+      margin-bottom: 20px;
+    }
+  }
+}
+// Header Responsive Styles End
+
+// Cards Section Responsive Styles Start
+@media screen and (max-width: 800px) {
+  .content {
+    flex-direction: column;
+    gap: 30px;
+    
+    .left .card {
+      gap: 10px;
+      transform: translateX(0) !important;
+    }
+    
+    .right {
+      align-items: flex-start;
+      text-align: left !important;
+      
+      .activate {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cards-section {
+    padding: 20px;
+    
+    .content .card {
+      padding: 16px !important;
+      
+      .card-number {
+        font-size: 16px !important;
+      }
+    }
+  }
+}
+// Cards Section Responsive Styles End
+
+// Goals Section Responsive Styles Start
+@media screen and (max-width: 800px) {
+  .goals-section .content .card {
+    flex-direction: row;
+    width: 100%;
+    
+    .lower {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+}
+// Goals Section Responsive Styles End
