@@ -454,10 +454,26 @@ main {
     }
   }
 }
+
+@media screen and (max-width: 400px) {
+  .cards-section {
+    padding: 20px;
+    
+    .content .card {
+      padding: 16px !important;
+      
+      .card-number {
+        font-size: 16px !important;
+      }
+    }
+  }
+}
 // Cards Section Styles End
 
 // Transaction History Section Start
 .transaction-history-section {
+  overflow-x: auto;
+  
   .table {
     width: 100%;
     border-collapse: collapse;
@@ -672,6 +688,7 @@ main {
 .new-transaction-section {
   .users {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
     
