@@ -9,7 +9,7 @@
   main {
     padding: 0 20px;
   }
-
+  
   .main-content {
     grid-template-columns: 1fr;
   }
@@ -63,9 +63,13 @@
     flex-direction: column;
     gap: 30px;
     
-    .left .card {
-      gap: 10px;
-      transform: translateX(0) !important;
+    .left {
+      width: 100% !important;
+      
+      .card {
+        gap: 10px;
+        transform: translateX(0) !important;
+      }
     }
     
     .right {
