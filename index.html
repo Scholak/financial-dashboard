@@ -8,6 +8,12 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // windows 11 displays websites bigger than it should be
+      if(screen.width > 1200 && screen.width < 1800) {
+        document.body.style.zoom = 0.8
+      }
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
